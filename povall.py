@@ -97,12 +97,6 @@ def login():
             return redirect(url_for('organization_portal'))
         else:
             return redirect(url_for('volunteer_portal'))
-        # return redirect(url_for('home'))
-        # if form.email.data == 'admin@blog.com' and form.password.data == 'password':
-        #     flash('You have been logged in!', 'success')
-        #     return redirect(url_for('home'))
-        # else:
-        #     flash('Login Unsuccessful. Please check username and password', 'danger')
     return render_template('login.html', title='Login', form=form)
 
 if __name__ == '__main__':
