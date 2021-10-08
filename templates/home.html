@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container-fluid homepage pb-5">
+        <div class="container pt-4">
+            <div class="row">
+    
+                <div class="col-md-6">
+                    <h6 class="h6 pb-1">Poverty Alleviation</h6>
+                    <h1 id = "mission">help in need is<br> help indeed.</h1>
+                    <p>
+                        “Love is not patronizing and charity isn't about pity,<br>it is about love. Charity and love are the same --<br> with charity you give love, so don't just give money <br> but reach out your hand instead.” 
+                        <br> ― Mother Teresa
+                    </p>  
+                    <div class="d-grid gap-2 d-md-block mt-5 mb-5">
+                        <a href="{{ url_for('login')}}"><button class="btn btn-outline" type="submit">Organization</button></a>
+                        <a href="{{ url_for('login')}}"><button class="btn btn-outline" type="submit">Volunteer</button></a>
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <img class="img-fluid mt-5 pt-5" src="../static/images/helping.jpg">
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+{% endblock content %}

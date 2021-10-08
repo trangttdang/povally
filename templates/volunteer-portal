@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="row pt-5">
+    {% for post in posts %}
+
+        <div class="col-md-4">
+          <div class="box p-3">
+              <img class="img-fluid" src="../static/images/donate.jpg">
+              <h3 class="h3 pt-3 text-center">{{ post.campaign }}</h3>
+              <p class="text-center pt-2">{{ post.content }}</p>
+              <center>
+                  <button class="btn btn-outline" type="Donate">Donate</button>
+                <button class="btn btn-outline" type="Volunteer">Volunteer</button
+                </center>
+          </div>
+      </div>
+
+      {% endfor %}
+{% endblock content %}
